@@ -4,6 +4,7 @@ import { Home } from "./components/Home";
 import { Header } from "./components/containers/Navbar";
 import { Login } from "./components/containers/Login";
 import { Register } from "./components/containers/Register";
+import { Dashboard } from "./components/containers/Dashboard";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/" component={Home} />
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
+      <Route path="/dashboard" component={Dashboard} />
     </div>
   );
 };

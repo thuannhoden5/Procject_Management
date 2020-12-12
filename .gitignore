@@ -22,5 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 package-lock.json
-src/style.css.map
-src.style.scss
+/src/style.css.map
+/src/style.scss
+.eslintcache
+yarn.lock

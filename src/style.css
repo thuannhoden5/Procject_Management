@@ -41,4 +41,82 @@ body {
   margin: 60px auto;
   max-width: 600px;
 }
+
+.status-time {
+  position: relative;
+  padding: 30px 0;
+  margin: auto 20px;
+}
+
+.status-time span {
+  position: absolute;
+}
+
+.status-time span::after {
+  content: '';
+  position: absolute;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  width: 5px;
+  height: 5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.status-time .time-start {
+  left: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.status-time .time-end {
+  right: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.status-time .time-end,
+.status-time .time-start {
+  top: 0;
+}
+
+.status-time .time-end::after,
+.status-time .time-start::after {
+  bottom: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.status-time .time-now {
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.status-time .time-now::after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.infor-project .card-text, .infor-project .list-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.infor-project .card-text svg, .infor-project .list-group svg {
+  margin-right: 15px;
+}
+
+.infor-project .member {
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
